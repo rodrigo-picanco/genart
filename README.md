@@ -1,2 +1,4 @@
-# genart
-A generative art projects and studies.
+# genart :art:
+Generative art projects and studies.
+
+
