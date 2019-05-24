@@ -4,7 +4,7 @@
   "description": "",
   "main": "sketch.js",
   "scripts": {
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
     "start": "canvas-sketch src/$ART/index.js",
     "build": "canvas-sketch src/$ART/index.js --dir public/$ART --name index --build --inline"
   },
