@@ -89,10 +89,7 @@ const Plane = ({}) => {
 export default () => (
   <>
     <GlobalStyles />
-    <p style={{ marginLeft: 8 }}>
-      shout out to jjkostick for the 3D model.
-      <a href={"https://sketchfab.com/jjkostick"}> Checkout his/hers work.</a>
-    </p>
+
     <Canvas
       camera={{ position: [0, 0, 5] }}
       onCreated={({ gl }) => {
