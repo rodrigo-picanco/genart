@@ -1,34 +1,14 @@
 # genart :art:
 
-[Generative art] projects and studies.
+[Generative art](https://en.wikipedia.org/wiki/Generative_art) projects and studies.
 
 
 ## Get started
-
-- To install this on your machine, first clone the repo
-
-`git clone https://github.com/rodrigo-tavares/genart/`
-
-- Then install nod dependencies 
-
-`npm i `
-
+This is a mono repo, go to any of thr projects to learn how to run them
 
 ## Be a artist
-
-- To run the dev server run the following commando with the path to your artwork in `/src`
-
-`ART=$PATH_TO_ARTWORK npm start`
-
-- To build to html run: 
-
-`ART=$PATH_TO_ARTWORK npm start`
+Feel free to open a PR!
 
 
 ## Gallery
-
-[Color grid](https://rodrigo-tavares.github.io/genart/colorGrid/)
-
-
-
-
+Soon
