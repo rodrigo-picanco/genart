@@ -1,21 +1,6 @@
 {
-  "name": "genart",
-  "version": "1.0.0",
-  "description": "",
-  "main": "sketch.js",
-  "scripts": {
-    "deploy": "gh-pages -d public",
-    "start": "canvas-sketch src/$ART/index.js",
-    "build": "canvas-sketch src/$ART/index.js --dir public/$ART --name index --build --inline"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "canvas-sketch": "^0.3.1",
-    "canvas-sketch-cli": "^1.5.2",
-    "canvas-sketch-util": "^1.8.0",
-    "gh-pages": "^2.0.1",
-    "nice-color-palettes": "^3.0.0"
+    "three": "^0.115.0",
+    "three-trackballcontrols": "^0.0.8"
   }
 }
