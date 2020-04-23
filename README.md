@@ -14,3 +14,4 @@ Feel free to open a PR!
 - [color-grid](https://naughty-bhaskara-69858d.netlify.app/)
 - [dimension](https://build-13a184b9-ad49-4ee9-9d28-88cd5761a812.gtsb.io/)
 - [city](https://stupefied-wright-31dd6e.netlify.app/)
+- [still standing](https://covidsualise-brasil.netlify.app)
