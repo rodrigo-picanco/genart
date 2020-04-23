@@ -5,16 +5,13 @@
       pessoas recuperadas por dia.
     </h1>
     <p>
-      Cada círculo branco representa o total dos casos confirmados até aquele
-      dia um dado dia a partir do primeiro dia com 100 casos confirmados. Os
+      Cada círculo branco representa o total dos casos confirmados até
+      um dado dia a partir do primeiro dia com 100 casos confirmados. Os
       círculos verdes representam as pessoas recuperadas em relação a esse
       total.
     </p>
 
-    <svg
-      width="calc(100% - 200px)"
-      :height="(recordDiameter * records.length) / 7 + 200"
-    >
+    <svg width="calc(100% - 200px)" :height="(recordDiameter * records.length) / 7 + 200">
       <g
         v-for="(record, index) in records"
         :key="index"
@@ -50,28 +47,28 @@ export default {
   data() {
     return {
       records: [],
-      recordDiameter: (window.innerWidth - 200) / 7,
+      recordDiameter: (window.innerWidth - 200) / 7
     };
   },
   async mounted() {
     const rawData = await fetch(
       "https://api.covid19api.com/total/country/brazil"
-    ).then((res) => res.json());
+    ).then(res => res.json());
 
     const formatedData = rawData
       .reverse()
-      .filter((record) => record.Confirmed > 100)
-      .map((record) => {
+      .filter(record => record.Confirmed > 100)
+      .map(record => {
         const confirmedScale = d3.scaleLinear([0, record.Confirmed], [0, 1]);
 
         return {
           confirmedSize: record.Confirmed,
-          recoveredSize: confirmedScale(record.Recovered),
+          recoveredSize: confirmedScale(record.Recovered)
         };
       });
 
     this.records = formatedData;
-  },
+  }
 };
 </script>
 
