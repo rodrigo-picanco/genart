@@ -4,9 +4,8 @@
   "description": "",
   "main": "sketch.js",
   "scripts": {
-    "deploy": "gh-pages -d public",
-    "start": "canvas-sketch src/$ART/index.js",
-    "build": "canvas-sketch src/$ART/index.js --dir public/$ART --name index --build --inline"
+    "start": "canvas-sketch ./index.js",
+    "build": "canvas-sketch ./index.js --dir ./dist --name index --build --inline"
   },
   "keywords": [],
   "author": "",

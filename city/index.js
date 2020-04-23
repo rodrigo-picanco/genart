@@ -15,12 +15,16 @@ addShapes();
 render();
 
 function addShapes() {
-  const num = 50;
+  const num = 20;
   const distance = 10;
-  const offset = 10;
+  const offset = 50;
 
   for (let i = 0; i < num; i++) {
+    const streetX = random(1, 5);
+
     for (let j = 0; j < num; j++) {
+      const streetZ = random(1, 50);
+
       const color = new THREE.Color(`hsl(${random(180, 210)}, 50%, 50%)`);
       const height = random(25, 75);
       const geometry = new THREE.BoxGeometry(10, height, 10);
@@ -30,15 +34,9 @@ function addShapes() {
 
       const mesh = new THREE.Mesh(geometry, material);
 
-      mesh.position.x =
-        i % 2 === 0 || i % 3 === 0
-          ? distance * i
-          : distance * i + random(10, 50);
+      mesh.position.x = distance * i + streetX * streetZ;
 
-      mesh.position.z =
-        j % 2 === 0 || j % 3 === 0
-          ? distance * j + offset
-          : distance * j + offset + random(10, 50);
+      mesh.position.z = distance * j;
 
       scene.add(mesh);
     }
