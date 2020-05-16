@@ -15,4 +15,4 @@ Feel free to open a PR!
 - [dimension](https://build-13a184b9-ad49-4ee9-9d28-88cd5761a812.gtsb.io/)
 - [city](https://stupefied-wright-31dd6e.netlify.app/)
 - [still standing](https://covidsualise-brasil.netlify.app)
-- [cube] (https://blissful-archimedes-2dba1b.netlify.app/)
+- [cube](https://blissful-archimedes-2dba1b.netlify.app/)
