@@ -10,5 +10,9 @@
     "eases": "^1.0.8",
     "nice-color-palettes": "^3.0.0",
     "three": "^0.116.1"
+  },
+  "scripts": {
+    "start": "canvas-sketch ./index.js",
+    "build": "canvas-sketch ./index.js --dir ./dist --name index --build --inline"
   }
 }
