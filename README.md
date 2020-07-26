@@ -4,7 +4,7 @@
 
 
 ## Get started
-This is a mono repo, go to any of thr projects to learn how to run them
+This is a mono repo, go to any of the projects to learn how to run them
 
 ## Be artsy
 Feel free to open a PR!
